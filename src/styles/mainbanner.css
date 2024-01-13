@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600&display=swap');
+
+.main-banner-container{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-left: 9vw;
+    margin-top: 300px;
+    user-select: none;
+}
+
+.welcome{
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    background: linear-gradient(130deg, #b300cb77,#00b9d678, #b300cb77);
+    border: 2px solid  #ffffff2b;
+    backdrop-filter: blur(2px);
+    user-select: none;
+}
+
+.welcome h2{
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    animation: gradient-animation ease-in-out 6s infinite;
+    -webkit-background-clip: text;
+}
+
+.title{
+
+}
+
+.title h1{
+    color: #fff;
+    font-size: 62px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+.subtitle h2{
+    background: linear-gradient(90deg,#00b8d6,#b400cb,#00b8d6);
+    background-size: 200% 200%;
+    font-size: 62px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient-animation ease-in-out 6s infinite;
+    margin-top: -40px;
+}
+
+.presentation{
+    display: flex;
+    max-width: 1000px;
+}
+
+.presentation h4{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+}
+button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+    color: #fff;
+    width: 180px;
+    height: 50px;
+    line-height: 2em;
+    text-align: center;
+    line-height: 1.5;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 10px;
+    z-index: 1;
+
+  }
+  
+  button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600&display=swap');
+
+.nav-container{
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 500;
+    color: rgb(164, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(21, 21, 21, .2);
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    user-select: none;
+}
+
+
+.nav-border {
+    margin-top: 80px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    color: #fff;
+    background: linear-gradient(90deg, #b400cb,#00b8d6, #b400cb);
+    background-size: 200% 200%;
+    animation: gradient-animation ease-in-out 3s infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0%;
+      }
+    
+      100% {
+        background-position: 200%;
+      }
+    }
+
+/* Elementos */
+
+.logo{
+    display: flex;
+    position: relative;
+    padding-left: 8vw;
+    flex: 1;
+}
+
+.logo h1{
+    background: linear-gradient(90deg,#00b8d6,#b400cb,#00b8d6);
+    background-size: 200% 200%;
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient-animation ease-in-out 3s infinite;
+}
+
+
+/* Atajos */
+
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .resume-button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .resume-button:hover::before {
+    filter: blur(20px);
+  }
+  
+  .resume-button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+
+
+.shortcuts{
+    display: flex;
+    position: relative;
+    flex: 1;
+    text-align: right;
+    justify-content: end;
+    padding-right: 8vw;
+}
+
+.shortcuts ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.shortcuts li{
+    margin-left: 24px;
+    width: 80px;
+}
+
+.shortcuts a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+}
+
+.shortcuts a:hover{
+    animation: gradient-animation ease-in-out 3s infinite;
+    background: linear-gradient(90deg,#00b8d6,#b400cb,#00b8d6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+}
+
+.shortcut a:focus{
+    animation: gradient-animation ease-in-out 3s infinite;
+    background: linear-gradient(90deg, #00b8d6, #b400cb, #00b8d6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+}
+
+.shortcut a:active{
+    animation: gradient-animation ease-in-out 3s infinite;
+    background: linear-gradient(90deg, #00b8d6, #b400cb, #00b8d6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+}
+
+/**/
+.btn-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-color-mode-switch {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner {
+  margin: 0px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+  display: block;
+  animation: gradient-animation ease-in-out 3s infinite;
+  background: linear-gradient(90deg,#00b8d6,#b400cb,#00b8d6);
+  background-size: 200% 200%;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+  content: attr(data-on);
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  top: 7px;
+  right: 20px;
+  color: #222;
+  cursor: pointer;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+  content: attr(data-off);
+  width: 60px;
+  height: 25px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  left: 2px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-color-mode-switch input[type="checkbox"] {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0px;
+  cursor: pointer;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after {
+  content: attr(data-on);
+  left: 58px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before {
+  content: attr(data-off);
+  right: auto;
+  left: 20px;
+}

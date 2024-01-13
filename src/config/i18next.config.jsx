@@ -1,0 +1,32 @@
+import i18n from "i18next";
+import Backend from "i18next-http-backend";
+import { initReactI18next } from "react-i18next";
+import esMainBanner from '../../public/locales/es/mainbanner.json';
+import enMainBanner from '../../public/locales/en/mainbanner.json';
+import esContact from '../../public/locales/es/contact.json';
+import enContact from '../../public/locales/en/contact.json';
+import esNavBar from '../../public/locales/es/navbar.json';
+import enNavBar from '../../public/locales/en/navbar.json';
+i18n
+  .use(Backend)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "es",
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+    resources: {
+      es: {
+        mainbanner: esMainBanner,
+        contact: esContact,
+        navbar: esNavBar
+      },
+      en: {
+        mainbanner: enMainBanner,
+        contact: enContact,
+        navbar: enNavBar
+      },
+    },
+  });
+
+export default i18n;
