@@ -240,3 +240,27 @@
   right: auto;
   left: 20px;
 }
+
+@media only screen and (max-width: 900px) {
+  .logo{
+    padding-left: 2vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .btn-container{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .shortcuts li{
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .resume-button{
+    margin-left: 1vw;
+  }
+}
