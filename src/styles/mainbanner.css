@@ -98,3 +98,21 @@ button {
     }
   }
   
+  
+@media only screen and (max-width: 900px) {
+    .title h1{
+      font-size: 48px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .subtitle h2{
+      font-size: 42px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .presentation h4{
+      font-size: 30px;
+    }
+  }
