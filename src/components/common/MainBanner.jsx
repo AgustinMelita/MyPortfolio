@@ -1,6 +1,9 @@
 import React from 'react'
 import "../../styles/mainbanner.css"
 import { useTranslation } from 'react-i18next';
+import Docu from "../../assets/Curriculum.pdf"
+
+
 
 export const MainBanner = () => {
 
@@ -20,7 +23,7 @@ export const MainBanner = () => {
         <div className='presentation'>
             <h4>{t("presentation")}</h4>
         </div>
-        <button className='resume-button' href="">{t("resume")}</button>
+        <a href={Docu} download><button  className='resume-button'>{t("resume")}</button></a>
     </div>
   )
 }

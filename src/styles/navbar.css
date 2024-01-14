@@ -242,21 +242,8 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .logo{
-    padding-left: 2vw;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .btn-container{
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
   .shortcuts li{
-    margin-left: 2vw;
-    margin-right: 2vw;
+    display: none;
   }
 }
 
