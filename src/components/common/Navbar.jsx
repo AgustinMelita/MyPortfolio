@@ -2,7 +2,22 @@ import React from 'react';
 import "../../styles/navbar.css";
 import { useTranslation } from 'react-i18next';
 
+
 export const Navbar = () => {
+
+    //scroll
+
+    const scrollToSection = (sectionId, event) => {
+        event.preventDefault();
+        const section = document.getElementById(sectionId);
+    
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+    
+
+    //Logo
 
     const logo = "</>"
 
@@ -31,8 +46,8 @@ export const Navbar = () => {
                         <label className="btn-color-mode-switch-inner" data-off="ES" data-on="EN" for="color_mode"></label>
                     </label>
                 </div>
-                    <li><a href="app-banner">{t("home")}</a></li>
-                    <li><a href="#" >{t("contact")}</a></li>
+                    <li><a href="#home" onClick={(e) => scrollToSection('home', e)} >{t("home")}</a></li>
+                    <li><a href="#contact" onClick={(e) => scrollToSection('contact', e)}  >{t("contact")}</a></li>
                 </ul>
             </div>
         </header>

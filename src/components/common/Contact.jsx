@@ -24,7 +24,7 @@ export const Contact = () => {
     };
 
     return (
-        <div className="contact-container">
+        <div id="contact" className="contact-container">
             <div className="form-container">
                 <form className="form" ref={form} onSubmit={sendEmail}>
                     <div className="form-group">

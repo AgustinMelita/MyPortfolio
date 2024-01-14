@@ -1,8 +1,7 @@
 import React from 'react'
 import "../../styles/mainbanner.css"
 import { useTranslation } from 'react-i18next';
-import Docu from "../../assets/Curriculum.pdf"
-
+import Docu from "../.././assets/Curriculum.pdf";
 
 
 export const MainBanner = () => {
