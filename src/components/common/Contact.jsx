@@ -11,6 +11,7 @@ export const Contact = () => {
     // email 
 
     const form = useRef();
+    
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -18,6 +19,7 @@ export const Contact = () => {
       emailjs.sendForm('service_mnhrj37', 'template_kbix3v5', form.current, '2q5iJ573yL4LTzFWo')
         .then((result) => {
             console.log(result.text);
+            form.current.reset();
         }, (error) => {
             console.log(error.text);
         });
