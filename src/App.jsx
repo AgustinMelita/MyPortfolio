@@ -7,6 +7,7 @@ import { Contact } from './components/common/Contact';
 import { SpinnerComponent } from "./components/common/SpinnerComponent";
 import fondo from "./assets/space.mp4";
 import { Suspense } from 'react';
+import { Projects } from "./components/common/Projects";
 
 
 
@@ -38,6 +39,7 @@ function App() {
                   <Navbar className="app-navbar"/>
                   <MainBanner className="app-banner"/>
                   <CodeScreen className="app-codescreen"/>
+                  <Projects className="app-project"/>
                   <Contact  className="app-projects"/>
                 </div>
               </div>

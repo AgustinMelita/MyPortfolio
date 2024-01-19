@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600&display=swap');
+
+.project-container {
+    width: 100%;
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+    height: auto;
+    min-height: 400px; /* Ajusta este valor según tus necesidades */
+    background-size: 400%;
+    background: linear-gradient(45deg, #00b9d650, #b300cb69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 500px; /* Ajusta este valor según tus necesidades */
+    height: auto;
+}
+
+.project-h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem; /* Ajusta este valor según tus necesidades */
+    color: white;
+}
+
+.project-btn {
+    margin-top: 10px
+}
+
+.project-btn-container{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
