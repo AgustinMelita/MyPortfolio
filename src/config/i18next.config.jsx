@@ -1,12 +1,15 @@
 import i18n from "i18next";
 import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
-import esMainBanner from '../../public/locales/es/mainbanner.json';
-import enMainBanner from '../../public/locales/en/mainbanner.json';
-import esContact from '../../public/locales/es/contact.json';
-import enContact from '../../public/locales/en/contact.json';
-import esNavBar from '../../public/locales/es/navbar.json';
-import enNavBar from '../../public/locales/en/navbar.json';
+import esMainBanner from '../locales/es/mainbanner.json';
+import enMainBanner from '../locales/en/mainbanner.json';
+import esContact from '../locales/es/contact.json';
+import enContact from '../locales/en/contact.json';
+import esNavBar from '../locales/es/navbar.json';
+import enNavBar from '../locales/en/navbar.json';
+import esProject from '../locales/es/project.json';
+import enProject from '../locales/en/project.json';
+
 i18n
   .use(Backend)
   .use(initReactI18next)
@@ -19,12 +22,14 @@ i18n
       es: {
         mainbanner: esMainBanner,
         contact: esContact,
-        navbar: esNavBar
+        navbar: esNavBar,
+        project: esProject
       },
       en: {
         mainbanner: enMainBanner,
         contact: enContact,
-        navbar: enNavBar
+        navbar: enNavBar,
+        project: enProject
       },
     },
   });

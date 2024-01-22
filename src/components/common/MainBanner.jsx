@@ -7,6 +7,7 @@ import Documento from "../../assets/Curriculum.pdf"
 export const MainBanner = () => {
 
     const {t} = useTranslation(["mainbanner"]);
+    
 
   return (
     <div className='main-banner-container'>

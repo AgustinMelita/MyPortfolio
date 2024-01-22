@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600&display=swap');
 
 .project-container {
-    width: 100%;
-    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    width: 100vw; 
     margin: 0 auto;
+    margin-top: 200px;
     height: auto;
-    min-height: 400px; /* Ajusta este valor según tus necesidades */
+    min-height: 400px; 
     background-size: 400%;
     background: linear-gradient(45deg, #00b9d650, #b300cb69);
     display: flex;
@@ -14,7 +14,7 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    z-index: 999;
+    z-index: 109;
 }
 
 .project-card {
@@ -26,8 +26,10 @@
 
 .project-image {
     width: 100%;
-    max-width: 500px; /* Ajusta este valor según tus necesidades */
+    max-width: 400px; /* Ajusta este valor según tus necesidades */
     height: auto;
+    border-radius: 10px;
+    border: 2px solid #b300cbf1;
 }
 
 .project-h1 {
@@ -42,7 +44,7 @@
 
 .project-btn-container{
     display: flex;
-    width: 500px;
+    width: 400px;
     justify-content: space-between;
     margin-top: 20px;
 }
