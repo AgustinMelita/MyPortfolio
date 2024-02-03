@@ -1,9 +1,11 @@
-import React from 'react';
 import "../../styles/navbar.css";
 import { useTranslation } from 'react-i18next';
 
 
 export const Navbar = () => {
+
+    const logo = "</>"
+
 
     //scroll
 
@@ -15,11 +17,6 @@ export const Navbar = () => {
           section.scrollIntoView({ behavior: 'smooth' });
         }
       };
-    
-
-    //Logo
-
-    const logo = "</>"
 
     //Traduccion
 
@@ -28,8 +25,6 @@ export const Navbar = () => {
         const newLanguage = i18n.language === 'en' ? 'es' : 'en';
         i18n.changeLanguage(newLanguage);
     }
-
-    //Entre Home y contact va el projects
 
   return (
     <div>
@@ -43,7 +38,7 @@ export const Navbar = () => {
                 <div className="btn-container">
                     <label className="switch btn-color-mode-switch">
                         <input onClick={changeLanguage} value="1" id="color_mode" name="color_mode" type="checkbox"/>
-                        <label className="btn-color-mode-switch-inner" data-off="ES" data-on="EN" for="color_mode"></label>
+                        <label className="btn-color-mode-switch-inner" data-off="ES" data-on="EN"></label>
                     </label>
                 </div>
                     <li><a href="#home" onClick={(e) => scrollToSection('home', e)} >{t("home")}</a></li>

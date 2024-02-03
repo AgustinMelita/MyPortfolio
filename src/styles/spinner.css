@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0; /* Color de fondo durante la carga */
+  background-color: #f0f0f0; 
 }
 
 .background {
@@ -16,8 +16,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Coloca el fondo detrás del spinner */
-  background-color: #151516; /* Color de fondo durante la carga */
+  z-index: -1; 
+  background-color: #151516; 
 }
 
 /* Resto de estilos del spinner */

@@ -1,16 +1,7 @@
-import React from "react";
 import "../../styles/codescreen.css"
-import Atropos from 'atropos';
-
 
 
 export const CodeScreen = () =>{
-
-    
-    const myAtropos = Atropos({
-        el: '.my-atropos',
-        // rest of parameters
-      });
 
     const greater = "/>"
 

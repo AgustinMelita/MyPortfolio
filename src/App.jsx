@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "./styles/app.css"
 import { Navbar } from './components/common/Navbar';
 import { MainBanner } from "./components/common/MainBanner";
@@ -16,12 +16,10 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simula un tiempo de carga, podrías realizar aquí tus operaciones asincrónicas
     const fakeLoading = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
 
-    // Limpia el temporizador al desmontar el componente
     return () => clearTimeout(fakeLoading);
   }, []);
 

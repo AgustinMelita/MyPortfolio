@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/contact.css";
 import { useTranslation } from 'react-i18next';
 import "../../styles/projects.css";

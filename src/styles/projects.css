@@ -26,7 +26,7 @@
 
 .project-image {
     width: 100%;
-    max-width: 400px; /* Ajusta este valor según tus necesidades */
+    max-width: 400px; 
     height: auto;
     border-radius: 10px;
     border: 2px solid #b300cbf1;
@@ -34,7 +34,7 @@
 
 .project-h1 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2rem; /* Ajusta este valor según tus necesidades */
+    font-size: 2rem;
     color: white;
 }
 

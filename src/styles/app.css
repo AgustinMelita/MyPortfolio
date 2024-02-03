@@ -8,7 +8,7 @@
 
 .app-container{
   display: flex;
-  align-items: center; /* Alinea los elementos verticalmente en el centro, ajusta según tus necesidades */
+  align-items: center; 
   flex-wrap: wrap;
 }
 
@@ -27,11 +27,9 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
+  object-fit: cover; 
   opacity: .5;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1px;
 }
-
-/* Parallax */

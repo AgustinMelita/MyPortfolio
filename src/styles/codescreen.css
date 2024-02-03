@@ -125,12 +125,12 @@
 
 .code-display {
   transform: translateZ(30px);
-  display: flex;  /* Agregamos flex para alinear elementos en fila */
+  display: flex; 
 }
 
 .display div {
   position: relative;
-  display: flex;  /* Agregamos flex para alinear elementos en fila */
+  display: flex; 
 }
 
 .code-face, .back, .top, .bottom, .left, .right {
